@@ -10,8 +10,8 @@
   --light: #f4f4fd;
   --modal-overlay: #2e2f42;
   --hero-background: #2e2f42;
-  --background:#E5E5E5
-  --white: #ffff;
+  --background: #e5e5e5;
+  --white: #ffffff;
 }
 
 body {
@@ -106,7 +106,7 @@ button:hover {
 }
 
 /* team */
-.team{
+.team {
   background-color: var(--light);
 }
 
