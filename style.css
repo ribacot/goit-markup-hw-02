@@ -10,41 +10,41 @@
   --light: #f4f4fd;
   --modal-overlay: #2e2f42;
   --hero-background: #2e2f42;
-  --background: #e5e5e5;
   --white: #ffffff;
 }
 
 body {
   color: var(--text);
   font-family: roboto, sans-serif;
-  /* font-size: 16px; */
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  background-color: var(--background);
+  font-size: 16px;
+  background-color: var(--white);
 }
-h1 {
-  font-size: 56px;
-  line-height: 1.07;
-}
-h2,
-h3 {
+
+.section-title,
+.section-subtitle,
+.section-text {
   color: var(--dark);
+  letter-spacing: 0.02em;
 }
-h2 {
+
+.section-title {
   font-size: 36px;
-  /* font-weight: 700; */
+  text-transform: capitalize;
   line-height: 1.11;
 }
-h3 {
-  font-size: 24px;
+
+.section-subtitle {
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  text-transform: capitalize;
 }
+
 .link,
 .logo-link {
-  color: var(--text);
   text-decoration: none;
 }
+
 .list {
   list-style: none;
 }
@@ -53,29 +53,28 @@ h3 {
 .link:hover {
   color: var(--pressed-state);
 }
-.link h3:hover,
-.link h3:focus {
-  color: var(--pressed-state);
-}
 
 button {
-  color: var(--white);
+  color: var(--primari-brend);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: var(--primari-brend);
+  background-color: var(--accent);
   cursor: pointer;
 }
+
 button:focus,
 button:hover {
   background-color: var(--pressed-state);
+  color: var(--white);
 }
 
 /* header */
+
 .logo {
+  color: inherit;
   font-family: raleway, sans-serif;
-  font-style: 800;
+  font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -85,23 +84,40 @@ button:hover {
 .logo > .logo-web {
   color: var(--primari-brend);
 }
+
 .head-nav a {
+  color: inherit;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .contact a {
+  color: inherit;
   font-style: normal;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
 
-/* hero-studio */
-.hero-studio {
-  color: var(--white);
+/* hero*/
+.hero {
   background-color: var(--hero-background);
 }
 
+.hero-title {
+  color: var(--white);
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.hero-btn {
+  color: var(--white);
+  background-color: var(--primari-brend);
+}
+
 /* features */
-.features h2 {
+.features-title {
   visibility: hidden;
 }
 
@@ -113,15 +129,21 @@ button:hover {
 /* footer */
 
 .basement {
-  color: var(--accent);
   background-color: var(--dark);
 }
+
 .basement > .logo {
   color: var(--light);
 }
 
+.futer-text {
+  color: var(--accent);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 /* portfolio */
 
-.portfolio h1 {
+.portfolio .titl {
   visibility: hidden;
 }
