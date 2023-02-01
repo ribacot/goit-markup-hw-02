@@ -20,24 +20,26 @@ body {
   background-color: var(--white);
 }
 
-.section-title,
-.section-subtitle,
-.section-text {
-  color: var(--dark);
-  letter-spacing: 0.02em;
-}
 
 .section-title {
+  color: var(--dark);
   font-size: 36px;
   text-transform: capitalize;
   line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 
 .section-subtitle {
+  color: var(--dark);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  text-transform: capitalize;
+}
+
+.section-text {
+  color: var(--dark);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .link,
@@ -56,10 +58,12 @@ body {
 
 button {
   color: var(--primari-brend);
+  font-family: Roboto,sans-serif;
   font-weight: 500;
   font-size: 16px;
   font-style: inherit;
   letter-spacing: 0.04em;
+  line-height: 1.5;
   background-color: var(--accent);
   cursor: pointer;
 }
@@ -110,6 +114,7 @@ button:hover {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .hero-btn {
