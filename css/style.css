@@ -58,6 +58,7 @@ button {
   color: var(--primari-brend);
   font-weight: 500;
   font-size: 16px;
+  font-style: inherit;
   letter-spacing: 0.04em;
   background-color: var(--accent);
   cursor: pointer;
